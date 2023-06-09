@@ -26,6 +26,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "13a09c70-a821-43cf-b2bf-16b44edb27b6"
+      }
+    },
+    "owner": "andrewkuc"
   }
 }
