@@ -11,6 +11,14 @@ module.exports = function (api) {
         "transform-inline-environment-variables",
         {
           include: "TAMAGUI_TARGET",
+          exclude: [
+            "EXPO_ROUTER_APP_ROOT",
+            "EXPO_ROUTER_PROJECT_ROOT",
+            "EXPO_ROUTER_IMPORT_MODE",
+            "EXPO_ROUTER_IMPORT_MODE_ANDROID",
+            "EXPO_ROUTER_IMPORT_MODE_IOS",
+            "EXPO_ROUTER_IMPORT_MODE_WEB",
+          ]
         },
       ],
       // NOTE: this is optional, you don't *need* the compiler
@@ -22,8 +30,17 @@ module.exports = function (api) {
           logTimings: true,
         },
       ],
+      [require.resolve('babel-plugin-module-resolver'),
+        {
+          root: ["./"],
+          alias: {
+            "~": "./"
+          }
+        }
+      ],
       // NOTE: this is only necessary if you are using reanimated for animations
       "react-native-reanimated/plugin",
+      require.resolve("expo-router/babel"),
     ],
   };
 }
