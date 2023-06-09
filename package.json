@@ -1,0 +1,37 @@
+{
+  "name": "eas-build-test",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@tamagui/animations-react-native": "^1.31.2",
+    "@tamagui/animations-reanimated": "^1.31.2",
+    "@tamagui/babel-plugin": "^1.31.2",
+    "@tamagui/config": "^1.31.2",
+    "@tamagui/font-inter": "^1.31.2",
+    "@tamagui/theme-base": "^1.31.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "expo": "~48.0.18",
+    "expo-dev-client": "~2.2.1",
+    "expo-font": "^11.1.1",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.71.8",
+    "react-native-mmkv": "^2.8.0",
+    "react-native-reanimated": "~2.14.4",
+    "react-native-web": "^0.19.4",
+    "tamagui": "^1.31.2",
+    "expo-splash-screen": "~0.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.0.14",
+    "typescript": "^4.9.4"
+  },
+  "private": true
+}
